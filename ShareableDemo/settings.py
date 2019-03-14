@@ -25,7 +25,10 @@ SECRET_KEY = '$wl+@6(yvmb_%wrsyw+09yealffcb&u0^=g)n%xrjv8n=szzcq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'shareabledemo.herokuapp.com',
+]
 
 AUTHENTICATION_BACKENDS = ['home.email_auth_backend.EmailBackend']
 
