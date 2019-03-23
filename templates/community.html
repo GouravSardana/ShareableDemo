@@ -22,8 +22,8 @@
         margin-bottom: 100px;
     }
     nav{
-        height: 373px;
-        background-color: #08255e;
+        height: 362px;
+        background-image: url(../static/img/community.png);
 
     }
 
@@ -61,7 +61,7 @@
     }
     .fara-cycling{
         margin-top: 200px;
-        height: 360px;
+        height: 380px;
     }
     .fara-cycling-img{
         width: 551px;
@@ -118,17 +118,20 @@
     }
     #about{
     margin-top:105px;
-    margin-left:294px;
+    margin-left:445px;
     }
-    #p-about{
-    margin-top:38px;
-    margin-left:332px;
-    }
+
     #history-size{
     font-size: 20px;
     }
     p{
     font-size:20px;
+    }
+    .global-map{
+        background-image: url(../static/img/joinus.jpeg);
+        height: 400px;
+        background-size: cover;
+        background-position: center;
     }
 
 </style>
@@ -138,47 +141,21 @@
             <div class="nav-items">
                 <a href="/" class="brand-logo left">ShareableDemo</a>
                 <ul class="right">
-                    <li><a href="">Invest</a></li>
-                    <li><a href="">Trade</a></li>
-                    <li><a href="">Raise Funds</a></li>
-                    <li><a href="/community">Community</a></li>
-                    <li><a href="">About</a></li>
                     <li><a href="">Log In</a></li>
                     <li><a href="">Sign Up</a></li>
                 </ul>
             </div>
             <br>
         <div class="container">
-            <h2 id="about">About ShareableDemo</h2>
-            <h6 id="p-about">ShareableDemo is reimagining investment to create liquidity.</h6>
+            <h2 id="about">Community</h2>
+
         </div>
         </nav>
-        <br>
-        <br>
-        <br>
-    <section class="section container">
-        <div class="row">
-            <h4 class="blue-text text-darken-4 center-align" style="font-family:'Times New Roman', Times, serif">Our cross-border, transparent, easy-to-use platform for funding and trading connects smart companies with smart capital.
-Simple and optimised, investments are both time and cost-efficient.</h4>
-        </div>
-        <br>
-        <br>
-        <div class="row grey lighten-3 fara-cycling">
-            <div class="col m6">
-                <img src="{% static 'img/about.jpg' %}" class="img-responsive fara-cycling-img" alt="">
-            </div>
-            <div class="col m6">
-                <h3 class="blue-text text-darken-4" style="font-family:'Times New Roman', Times, serif">About</h3>
-                <p class="blue-text text-darken-4">ShareableDemo is a funding and trading platform for high-growth private companies. It helps founders raise funds beyond borders and provides access — and unique liquidity — to early stage equity investors.
-
-For founders, Funderbeam provides access to a community of high quality, active investors who can add value to a project — plus, founders are able to choose who can invest and therefore retain control over their cap table.</p>
-            </div>
-        </div>
-    </section>
+<br>
 
 
         <div class="section container">
-        <h3 class="blue-text text-darken-4" style="font-family:'Times New Roman', Times, serif">HISTORY</h3>
+        <!--<h3 class="blue-text text-darken-4" style="font-family:'Times New Roman', Times, serif">HISTORY</h3>-->
         <p id="history-size" class="blue-text text-darken-4" > ShareableDemo was founded in 2013 by Sai.
 
 Kaidi had led Nasdaq Tallinn as CEO since 2005, noticing many inefficiencies in the public markets. Companies list late and at high costs, meaning investors can’t access good growth companies. In addition, many investors have a poor understanding of how to succeed in the market and typically buy high and sell low.
@@ -191,22 +168,52 @@ In early 2016, ShareableDemo Markets launched with the first four companies rais
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="office-sec" class="section container">
-            <div class="row grey lighten-3 flow-vr">
-                <div class="col m6">
-                    <h3 class="blue-text text-darken-4" style="font-family:'Times New Roman', Times, serif">Offices</h3>
-                    <p class="blue-text text-darken-4">1 Coleman Street, <br> #10-06, <br> The Adelphi,<br> Singapore 179803</div>
-                <div class="col m6">
-                    <img src="{% static 'img/office.jpg' %}" class="img-responsive flow-vr-img" alt="">
-                </div>
-            </div>
+    <div class="section container">
+        <h1 class="blue-text text-darken-4" style="font-family:'Times New Roman', Times, serif"><strong>Join Our Online Community</strong></h1>
+        <p id="history-size" class="blue-text text-darken-4" > ShareableDemo was founded in 2013 by Sai.
 
+Kaidi had led Nasdaq Tallinn as CEO since 2005, noticing many inefficiencies in the public markets. Companies list late and at high costs, meaning investors can’t access good growth companies. In addition, many investors have a poor understanding of how to succeed in the market and typically buy high and sell low.
+
+The idea came to create a game to teach young people how to invest, using startups as a more relatable subject than stocks. Even before starting development, the game evolved into what Kaidi and Urmas really saw a need for: A platform where investors could efficiently invest and trade companies while in their growth stage.
+
+In early 2016, ShareableDemo Markets launched with the first four companies raising funds, and shortly after they were trading on the secondary market. In August 2018, Funderbeam started operating as a regulated UK entity, Funderbeam Markets LTD, after being authorised by the UK Financial Conduct Authority.</p>
+        <a href=""><i class="fab fa-facebook-square fa-4x"></i></a>
+        <a href=""><i class="fab fa-twitter-square fa-4x"></i></a>
+        <a href=""><i class="fab fa-linked-in-square fa-4x"></i></a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <section class="section container">
+        <div class="row">
+
+        </div>
+        <br>
+        <br>
+        <h1 class="blue-text text-darken-4" style="font-family:'Times New Roman', Times, serif"><strong>Upcoming Events</strong></h1>
+        <br>
+        <div style="background-color: rgba(31,135,255,.12);" class="row  fara-cycling">
+            <div class="col m6">
+                <img src="{% static 'img/community_invest.jpg' %}" class="img-responsive fara-cycling-img" alt="">
+            </div>
+            <div class="col m6">
+                <h3 class="blue-text text-darken-4" style="font-family:'Times New Roman', Times, serif">Events No 1</h3>
+                <p class="blue-text text-darken-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.  explicabo ad architecto vero, officia aspernatur quLorem ipsum dolor, sit amet consectetur adipisicing elit.  explicabo ad architecto vero, officia aspernatur quLorem ipsum dolor, sit amet consectetur adipisicing elit.  explicabo ad architecto vero, officia aspernatur quLorem ipsum dolor, sit amet consectetur adipisicing elit.  explicabo ad architecto vero, officia aspernatur qu</p>
+            </div>
+        </div>
     </section>
+        <section class="section container">
+            <h1 class="blue-text text-darken-4 center" style="font-family:'Times New Roman', Times, serif"><strong>Join Us</strong></h1>
+
+            <br>
+        <p class="center align grey lighten-2 blue-text text-darken-4">Our community of investors from 119 countries has invested more than €10m and made more than 6500 trades with privately held companies.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+        <div class="global-map"></div>
+
+        </section>
     <footer class="page-footer">
             <div class="container">
                 <div class="row">

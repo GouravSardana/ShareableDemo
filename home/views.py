@@ -68,3 +68,7 @@ def user_logout(request):
 
 class About(TemplateView):
     template_name = 'about.html'
+
+
+class Community(TemplateView):
+    template_name = 'community.html'
