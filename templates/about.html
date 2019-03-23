@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<style>
+    body{
+        font-family: Montserrat;
+    }
+    header{
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 100px;
+    }
+    nav{
+        height: 373px;
+        background-color: #08255e;
+
+    }
+
+    .nav-items{
+        margin: 0 50px;
+    }
+    .nav-items ul li a:hover{
+        background-color: transparent;
+    }
+    .headings{
+        margin-top: 100px;
+    }
+    .headings p{
+        font-size: 18px;
+    }
+    .get-started{
+        width: 150px;
+        height: 50px;
+        padding: 5px;
+        background-color: #15c14f;
+    }
+    .carousel-card{
+        background-color: transparent;
+    }
+    .private-investment{
+        height: 600px;
+        width: 60%;
+        padding: 50px;
+    }
+    .made-tradeable{
+        width: 40%;
+        padding: 50px;
+        margin-top: -500px;
+        margin-left:711px;
+    }
+    .fara-cycling{
+        margin-top: 200px;
+        height: 360px;
+    }
+    .fara-cycling-img{
+        width: 551px;
+        margin-left: -41px;
+        margin-top: -126px;
+    }
+    section{
+        height: 100vh;
+    }
+    .flow-vr{
+        padding: 10px;
+        margin-top: 100px;
+        height: 360px;
+        margin-bottom: 100px;
+    }
+    .flow-vr-img{
+        width: 550px;
+        margin-right: -170px;
+        margin-top: -139px;
+        margin-left: 139px;
+    }
+
+    .signup-div{
+        font-size: 18px;
+        padding: 20px;
+        height: 150px;
+        margin-bottom: 50px;
+    }
+    .signup-btn{
+        width: 150px;
+        height: 50px;
+        padding: 5px;
+        background-color: #08255e;
+    }
+    .joinus-btn{
+        background-color: #08255e;
+        margin-top: 100px;
+        width: 150px;
+        height: 50px;
+        padding: 5px;
+    }
+    .page-footer{
+        background-color: #efeff1;
+        height: 300px;
+    }
+    .page-footer h6{
+        color: #2e3242;
+    }
+    .page-footer a{
+        color: rgba(46,50,66,.7);
+    }
+    .location-form{
+        margin-bottom: 100px;
+    }
+    #about{
+    margin-top:105px;
+    margin-left:294px;
+    }
+    #p-about{
+    margin-top:38px;
+    margin-left:332px;
+    }
+    #history-size{
+    font-size: 20px;
+    }
+    p{
+    font-size:20px;
+    }
+
+</style>
+</head>
+<body>
+        <nav class="nav nav-warpper">
+            <div class="nav-items">
+                <a href="/" class="brand-logo left">ShareableDemo</a>
+                <ul class="right">
+                    <li><a href="">Invest</a></li>
+                    <li><a href="">Trade</a></li>
+                    <li><a href="">Raise Funds</a></li>
+                    <li><a href="">Community</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="">Sign Up</a></li>
+                </ul>
+            </div>
+            <br>
+        <div class="container">
+            <h2 id="about">About ShareableDemo</h2>
+            <h6 id="p-about">ShareableDemo is reimagining investment to create liquidity.</h6>
+        </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+    <section class="section container">
+        <div class="row">
+            <h4 class="blue-text text-darken-4 center-align" style="font-family:'Times New Roman', Times, serif">Our cross-border, transparent, easy-to-use platform for funding and trading connects smart companies with smart capital.
+Simple and optimised, investments are both time and cost-efficient.</h4>
+        </div>
+        <br>
+        <br>
+        <div class="row grey lighten-3 fara-cycling">
+            <div class="col m6">
+                <img src="{% static 'img/about.jpg' %}" class="img-responsive fara-cycling-img" alt="">
+            </div>
+            <div class="col m6">
+                <h3 class="blue-text text-darken-4" style="font-family:'Times New Roman', Times, serif">About</h3>
+                <p class="blue-text text-darken-4">ShareableDemo is a funding and trading platform for high-growth private companies. It helps founders raise funds beyond borders and provides access — and unique liquidity — to early stage equity investors.
+
+For founders, Funderbeam provides access to a community of high quality, active investors who can add value to a project — plus, founders are able to choose who can invest and therefore retain control over their cap table.</p>
+            </div>
+        </div>
+    </section>
+
+
+        <div class="section container">
+        <h3 class="blue-text text-darken-4" style="font-family:'Times New Roman', Times, serif">HISTORY</h3>
+        <p id="history-size" class="blue-text text-darken-4" > ShareableDemo was founded in 2013 by Sai.
+
+Kaidi had led Nasdaq Tallinn as CEO since 2005, noticing many inefficiencies in the public markets. Companies list late and at high costs, meaning investors can’t access good growth companies. In addition, many investors have a poor understanding of how to succeed in the market and typically buy high and sell low.
+
+The idea came to create a game to teach young people how to invest, using startups as a more relatable subject than stocks. Even before starting development, the game evolved into what Kaidi and Urmas really saw a need for: A platform where investors could efficiently invest and trade companies while in their growth stage.
+
+In early 2016, ShareableDemo Markets launched with the first four companies raising funds, and shortly after they were trading on the secondary market. In August 2018, Funderbeam started operating as a regulated UK entity, Funderbeam Markets LTD, after being authorised by the UK Financial Conduct Authority.</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="office-sec" class="section container">
+            <div class="row grey lighten-3 flow-vr">
+                <div class="col m6">
+                    <h3 class="blue-text text-darken-4" style="font-family:'Times New Roman', Times, serif">Offices</h3>
+                    <p class="blue-text text-darken-4">1 Coleman Street, <br> #10-06, <br> The Adelphi,<br> Singapore 179803</div>
+                <div class="col m6">
+                    <img src="{% static 'img/office.jpg' %}" class="img-responsive flow-vr-img" alt="">
+                </div>
+            </div>
+
+    </section>
+    <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col m2 s12">
+                        <h6>Demo</h6>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Job</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="col m3 s12">
+                        <h6>Start</h6>
+                        <ul>
+                            <li><a href="">Become an investor ?</a></li>
+                            <li><a href="">Raise Fund</a></li>
+                            <li><a href="">Book a Demo</a></li>
+                        </ul>
+                    </div>
+                    <div class="col m2 s12">
+                        <h6>Learn</h6>
+                        <ul>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">How to invest?</a></li>
+                            <li><a href="">How to Raise?</a></li>
+                        </ul>
+                    </div>
+                    <div class="col m3 s12">
+                        <h6>Legal</h6>
+                        <ul>
+                            <li><a href="">Terms of use</a></li>
+                            <li><a href="">Risk Disclose</a></li>
+                            <li><a href="">Privacy policy</a></li>
+                            <li><a href="">Agreement and policies</a></li>
+                            <li><a href="">Fee Schedule</a></li>
+                        </ul>
+                    </div>
+                    <div class="col m2 s12">
+                        <h6>Connect</h6>
+                        <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+                        <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<!--jquery-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript" language="javascript">
+    $(document).ready(function(){
+        $('.carousel').carousel();
+    });
+</script>
+</body>
+</html>
