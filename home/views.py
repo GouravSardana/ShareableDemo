@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User, Group
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from django.urls import reverse
@@ -20,6 +21,33 @@ class Signup(TemplateView):
 
 class Investor(TemplateView):
     template_name = 'investor.html'
+    def post(self, request, *args, **kwargs):
+        if request.method == 'POST':
+            first_name = self.request.POST.get('first_name')
+            email = self.request.POST.get('email')
+            username = self.request.POST.get('username')
+            password = self.request.POST.get('password')
+            form = User.objects.create_user(first_name=first_name, email=email, username=username,
+                                            password=password)
+            group = Group.objects.get(name='Investor')
+            form.groups.add(group)
+            form.save()
+            return HttpResponseRedirect(reverse('user_login'))
+
+class Borrower(TemplateView):
+    template_name = 'borrower.html'
+    def post(self, request, *args, **kwargs):
+        if request.method == 'POST':
+            first_name = self.request.POST.get('first_name')
+            email = self.request.POST.get('email')
+            username = self.request.POST.get('username')
+            password = self.request.POST.get('password')
+            form = User.objects.create_user(first_name=first_name, email=email, username=username,
+                                            password=password)
+            group = Group.objects.get(name='Borrower')
+            form.groups.add(group)
+            form.save()
+            return HttpResponseRedirect(reverse('user_login'))
 
 
 def user_login(request):

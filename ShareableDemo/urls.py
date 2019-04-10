@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 from home import views
-from home.views import Home, Login, Signup, Investor, About, Community
+from home.views import Home, Login, Signup, Investor, About, Community, Borrower
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +25,7 @@ urlpatterns = [
     path('login/', views.user_login, name='user_login'),
     path('signup/', Signup.as_view(), name='signup'),
     path('investor/', Investor.as_view()),
+    path('borrower/', Borrower.as_view()),
     path('about/', About.as_view()),
     path('community/', Community.as_view()),
 ]
